@@ -4,7 +4,7 @@ public class dbConnect {
     private static Connection mycon=null;
 
     public Connection getConnection() throws ClassNotFoundException, SQLException {
-        String db="testingdb", user = "root", pass = "Vaidik@1904";
+        String db="testingdb", user = "root", pass = "password123";
         String url = "jdbc:mysql://localhost:3306/"+db;
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = DriverManager.getConnection(url,user,pass);
